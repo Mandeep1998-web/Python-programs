@@ -1,0 +1,6 @@
+def myfunction():
+ print ("hello")
+
+x=myfunction(); 
+print (x) // it always return NONE
+print (type(x))
