@@ -1,0 +1,9 @@
+#Python Program to Compare Two Tuples
+print("Enter the elements of tuple for t1")
+t1=tuple([eval(e) for e in input().split(",")])
+print("Enter the elements for the tuple t2")
+t2=tuple([eval(e) for e in input().split(",")])
+if t1==t2:
+    print("yes")
+else:
+    print("no")
