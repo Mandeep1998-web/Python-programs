@@ -1,0 +1,27 @@
+#python program to find out the homogoneous tuple from the hetero
+t1=(1,2.0,3,4.5,44,3+4j,"abc")
+t2=[]
+t3=[]
+t4=[]
+t7=[]
+t5=()
+t6=()
+t8=()
+
+for i in t1:
+    if type(i)==int:
+        t2.append(i)
+    elif type(i)==float:
+        t3.append(i)
+    elif type(i)==str:
+        t4.append(i)
+    elif type(i)==complex:
+        t7.append((i))
+t1=tuple(t2)
+t5=tuple(t3)
+t6=tuple(t4)
+t8=tuple(t7)
+print(t1)
+print(t5)
+print(t6)
+print(t8)
