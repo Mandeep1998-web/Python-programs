@@ -1,18 +1,8 @@
-def _sum(arr,n): 
-      
-    # return sum using sum  
-    # inbuilt sum() function 
-    return(sum(arr)) 
-  
-# driver function 
-arr=[] 
-# input values to list 
-arr = [12, 3, 4, 15] 
-  
-# calculating length of array 
-n = len(arr) 
-  
-ans = _sum(arr,n) 
-  
-# display sum 
-print ('Sum of the array is ', ans) 
+#Python Program to find sum of array
+arr =[1,2,3,4]
+sum=0
+for i in arr:
+    sum=sum+i;
+print(sum)
+
+
