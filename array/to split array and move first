@@ -1,0 +1,15 @@
+#Python Program to Split the array and add the first part to the end
+def split(arr,n,pos):
+ for i in range(0,pos):
+     temp = arr[0]
+     for j in range(0,n-1):
+      arr[j]=arr[j+1]
+     arr[n-1]=temp
+
+# main
+arr=[1,2,3,4,5,6]
+n=len(arr)
+pos=2
+split(arr,n,pos)
+for i in range(0,n):
+    print(arr[i],end =' ')
