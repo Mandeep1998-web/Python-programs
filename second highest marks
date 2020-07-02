@@ -1,0 +1,15 @@
+#find the second highest marks and if equal then render them alphabetically
+from decimal import Decimal
+from itertools import groupby, islice
+from operator import itemgetter
+
+a = []
+for i in range(int(input())):
+  name, score = (input(), Decimal(input()))
+  a.append((score, name))
+a.sort()
+print(a)
+#islice is an iterator where(seq(start,stop,step)# groupby is also an iterator arguments(iterable,key)
+for k, v in islice(groupby(a, key=itemgetter(0)), 1, 2):#k,v are two variables #itemgetter return key 0
+  for x in v:
+    print(x[1])
