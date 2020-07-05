@@ -1,0 +1,28 @@
+#quick sort algorithim
+def partition(A,low,high):
+
+ x=A[high]
+ i=low-1
+ for j in range(low , high):
+     if(A[j]<x):
+      i=i+1
+      A[i], A[j]=A[j],A[i]
+
+ A[i+1],A[high]=A[high],A[i+1]
+ return i+1
+
+
+# function for quick sort
+def quicksort(A,low,high):
+ if(low<high):
+    q=partition(A,low,high)
+    quicksort(A,low,q-1)
+    quicksort(A,q+1,high)
+
+# driver code
+A=[9,6,5,0,8,2,4,7]
+n=len(A)
+quicksort(A,0,n-1)
+print("sorted array is:")
+for i in range(n):
+    print("%d" %A[i])
