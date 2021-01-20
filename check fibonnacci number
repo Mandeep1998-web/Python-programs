@@ -1,0 +1,13 @@
+#4.Python Program for How to check if a given number is Fibonacci number?
+import math
+def isperfectsquare(num):
+     s=int(math.sqrt(num))
+     return s*s==num;
+def fib(num):
+    return isperfectsquare(5*num*num+4) or isperfectsquare(5*num*num-4)
+    return fib(num-1)+fib(num-2)
+num=int(input("Enter a number"))
+if(fib(num)):
+    print ("yes its a fibonnaci number")
+else:
+    print("no");
