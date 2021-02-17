@@ -1,0 +1,16 @@
+#Program to check the given number is fibonnaci no or not
+import math
+def checkperfectsquare(num):
+    result=int(math.sqrt(num));
+    return result*result==num;
+def fibonnaci(n):
+    cal1=5*n*n-4;
+    cal2=5*n*n+4;
+    return checkperfectsquare(cal1) or checkperfectsquare(cal2)
+    
+num=int(input("Enter the number to check the fibonnaci or not"))
+result=fibonnaci(num);
+if(result):
+    print("yes it's a fibonnaci number")
+else:
+    print("no its not a fibonnaci number")
